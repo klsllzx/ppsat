@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
         setup_semi_honest(io, party);
 
         int number_of_steps = atoi(argv[3]);
-        int nvar = atoi(argv[4]);
+        int nvar = atoi(argv[4])+1;
         auto phi_a =  make_unique<Formula>(nvar, argv[5], ALICE);
         auto phi_b =  make_unique<Formula>(nvar, argv[6], BOB);
         auto phi = phi_a -> conjunction(phi_b);
