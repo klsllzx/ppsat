@@ -166,7 +166,7 @@ Bit Formula::conflict(const Literal &ell) const
 	Bit b(0, PUBLIC);
 	auto neg_ell = ell.flip();
 	for (int i = 0; i < cls.size(); i++)
-		b = b | (cls[i]->contain(*neg_ell) & cls[i]->isUnit());
+		b = b | (cls[i]->contain(*neg_ell) & cls[i]->isUnit() & active[i]);
 	return b;
 };
 

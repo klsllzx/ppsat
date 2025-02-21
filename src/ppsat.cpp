@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
         setup_semi_honest(io, party);
 
         int number_of_steps = atoi(argv[3]);
-        int nvar = atoi(argv[4]);
+        int nvar = atoi(argv[4])+1;
         auto phi = make_unique<Formula>(nvar, argv[5]);
         cout << "input formula: \n";
         phi->print(true);
