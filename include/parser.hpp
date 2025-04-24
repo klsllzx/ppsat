@@ -15,4 +15,5 @@ class Parser {
     static vector<int> parse_literals(string text);
     /** Extract a list of strings, each encapsulated by parentheses. */
     static vector<string> parse_clauses(string text);
+    static vector<string> parse_DIMACS_file(const string& filename, int* nvar, int* ncls);
 };

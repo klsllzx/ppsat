@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env
 from __future__ import annotations
 from typing import List, Set, Iterator, Union, Tuple
 import copy
@@ -352,6 +352,7 @@ def solve(starting_formula:Formula, h, max_steps:int):
     current_formula = copy.deepcopy(starting_formula)
     conflict = False
     while True:
+        print(f"loop {i}")
         #logging.debug("=={}=================================".format(i))
         #logging.debug("loop head: {} {} {}".format(current_formula, current_literal, current_model))
         if i != 0:
@@ -440,18 +441,19 @@ if __name__ == "__main__":
     # print(nvar, ncls, nltr, steps)
 
     filename = sys.argv[1]
-    genotype = sys.argv[2]
-    casenum = sys.argv[3]
-    htype = sys.argv[4]
+    # genotype = sys.argv[2]
+    # casenum = sys.argv[3]
+    # htype = sys.argv[4]
+    htype = "det"
     nvar, ncls, f = read_formula_from_file(filename)
 
     if htype == "rand":
         h = RandHeuristic
         steps_length = (nvar * ncls * 0.48)/100000
-    elif htype == "det":
+    elif htype == "wrand":
         h = WeightedRandHeuristic
         steps_length = (nvar * ncls * 0.43)/100000
-    elif htype == "wrand":
+    elif htype == "det":
         h = DetHeuristic
         steps_length = (nvar * ncls * 1.05)/100000
     else:
@@ -459,6 +461,7 @@ if __name__ == "__main__":
     steps = solve(f, h, int(100000/steps_length))
     # print(nvar, ncls, steps)
     if steps == -1:
-        print(genotype, casenum, htype, -1)
+        print(f"step {steps}")
+        # print(genotype, casenum, htype, -1)
     else:
-        print(genotype, casenum, htype, steps * steps_length)
+        print(f"steps {step}")

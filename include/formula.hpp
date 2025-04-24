@@ -25,7 +25,7 @@ public:
 	/** Construct from a string. Only for test purpose. */
 	Formula(int nvar, string text, int party);
 	Formula(int nvar, string text);
-
+	Formula(string filename, int *nvar, int *ncls, int party);
 	/** Construct a list of default clauses. The length is still cls.size() */
 	unique_ptr<Formula> default_value() const;
 

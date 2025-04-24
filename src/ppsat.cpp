@@ -31,14 +31,17 @@ int main(int argc, char** argv) {
         setup_semi_honest(io, party);
 
         int number_of_steps = atoi(argv[3]);
-        int nvar = atoi(argv[4])+1;
-        auto phi_a =  make_unique<Formula>(nvar, argv[5], ALICE);
-        auto phi_b =  make_unique<Formula>(nvar, argv[6], BOB);
-        auto phi = phi_a -> conjunction(phi_b);
+        int nvar, ncls; // PUBLIC
+        string design_filename = argv[4];
+        auto phi = make_unique<Formula>(design_filename, &nvar, &ncls, PUBLIC);
         cout << "input formula: \n";
-         phi->print(true);
+        phi->print(true);
         Solver solver(nvar, phi);
-        auto model = solver.solve(number_of_steps, false);
+        auto start = chrono::steady_clock::now();
+        auto model = solver.solve(number_of_steps, true);
+        auto end = chrono::steady_clock::now();
+        auto time_span = static_cast<chrono::duration<double>>(end - start);
+        cout << "solve time: "<< time_span.count() <<" seconds\n";
         cout << "model\n"; 
         cout << model->toString() << endl;
         delete io;

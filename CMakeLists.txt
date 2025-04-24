@@ -5,7 +5,7 @@ project(ppsat)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(CMAKE_CXX_FLAGS "-march=native -maes -mrdseed -O3")
+set(CMAKE_CXX_FLAGS "-march=native  -O3")
 
 include_directories(include)
 find_package(emp-ot REQUIRED)

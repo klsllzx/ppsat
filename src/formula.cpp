@@ -63,6 +63,25 @@ Formula::Formula(int nvar, string text,  int party)
 		i++;
 	}
 }
+Formula::Formula(string filename, int *nvar, int *ncls, int party)
+{
+    // if (filename.empty()) {
+    //     *nvar = 0;
+    //     *ncls = 0;
+    //     active = new Bit[0];
+	// 	cls.push_back(make_unique<BIClause>(0)); // No clauses
+	// 	return;
+    // }
+	vector<string> raw_cls = Parser::parse_DIMACS_file(filename, nvar, ncls);
+	*nvar += 1;
+	active = new Bit[raw_cls.size()];
+	int i = 0;
+	for (auto raw_cl : raw_cls) {
+		active[i] = Bit(1, party);
+		cls.push_back(make_unique<BIClause>(*nvar, raw_cl, party));
+		i++;
+	}
+}
 
 Formula::Formula(int nvar, string text)
 {

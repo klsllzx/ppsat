@@ -147,7 +147,6 @@ unique_ptr<Model> Solver::solve(int steps, bool giantstep_test)
             time_span = static_cast<chrono::duration<double>>(end - start);
 
             cout<< "propagation: "<< time_span.count() <<" seconds\n";
-
         }
 
 		if (giantstep_test and i > 0)
