@@ -41,7 +41,7 @@ int main(int argc, char** argv) {
         auto model = solver.solve(number_of_steps, true);
         auto end = chrono::steady_clock::now();
         auto time_span = static_cast<chrono::duration<double>>(end - start);
-        cout << "solve time: "<< time_span.count() <<" seconds\n";
+        cout << "one step time: "<< time_span.count() <<" seconds\n";
         cout << "model\n"; 
         cout << model->toString() << endl;
         delete io;
