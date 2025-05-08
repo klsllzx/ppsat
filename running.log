@@ -18213,30 +18213,30 @@ size :3034
 -622 -661 -663 -664 -670 
 size :3034
 size :3034
-unit search: 2.89738 seconds
+unit search: 2.89042 seconds
 size :3034
-unit search: 3.81548 seconds
+unit search: 3.81315 seconds
 size :3034
-guess: 30.0999 seconds
+guess: 30.4243 seconds
 size :3034
-guess: 29.9756 seconds
-size :3034
-size :3034
+guess: 30.2965 seconds
 size :3034
 size :3034
 size :3034
-mux: 3.86151 seconds
-check: 2.20805 seconds
-backtrack: 0.0150149 seconds
-propagation: 1.62326 seconds
-one step time: 41.5036 seconds
+size :3034
+size :3034
+mux: 3.87221 seconds
+check: 2.16829 seconds
+backtrack: 0.0150249 seconds
+propagation: 1.63122 seconds
+one step time: 41.8012 seconds
 model
 {231}
-mux: 3.73392 seconds
-check: 2.33365 seconds
-backtrack: 0.0151299 seconds
-propagation: 1.62362 seconds
-one step time: 40.708 seconds
+mux: 3.74522 seconds
+check: 2.29352 seconds
+backtrack: 0.0151486 seconds
+propagation: 1.63146 seconds
+one step time: 41.0043 seconds
 model
 {231}
 Finished running on ./ssa-2/ssa7552-158.dimacs
@@ -24412,30 +24412,30 @@ size :1027
 87 88 90 92 156 
 size :1027
 size :1027
-unit search: 0.308879 seconds
+unit search: 0.311415 seconds
 size :1027
-unit search: 0.393076 seconds
+unit search: 0.396982 seconds
 size :1027
-guess: 3.25823 seconds
+guess: 3.27121 seconds
 size :1027
-guess: 3.24261 seconds
-size :1027
-size :1027
+guess: 3.25517 seconds
 size :1027
 size :1027
 size :1027
-mux: 0.416656 seconds
-check: 0.228763 seconds
-backtrack: 0.00715606 seconds
-propagation: 0.175815 seconds
-one step time: 4.46629 seconds
+size :1027
+size :1027
+mux: 0.416232 seconds
+check: 0.229657 seconds
+backtrack: 0.00712203 seconds
+propagation: 0.175578 seconds
+one step time: 4.48286 seconds
 model
 {173}
-mux: 0.39985 seconds
-check: 0.243765 seconds
-backtrack: 0.00644378 seconds
-propagation: 0.17623 seconds
-one step time: 4.39595 seconds
+mux: 0.399723 seconds
+check: 0.24444 seconds
+backtrack: 0.00646216 seconds
+propagation: 0.175951 seconds
+one step time: 4.41159 seconds
 model
 {173}
 Finished running on ./ssa-2/ssa0432-003.dimacs
@@ -229874,8 +229874,13 @@ active:1
 10371 10374 10377 10380 -10409 10410 
 size :34238
 size :34238
+10371 10374 10377 10380 -10409 10410 
+size :34238
+size :34238
+unit search: 246.733 seconds
+size :34238
 net_recv_data
-10371 10374 10377 10380 -10409 Finished running on ./ssa-2/ssa6288-047.dimacs
+Finished running on ./ssa-2/ssa6288-047.dimacs
 ================================================================================
 Running on ./ssa-2/ssa2670-130.dimacs
 connected
@@ -249812,30 +249817,30 @@ size :3321
 -921 -1167 -1262 -1264 -1266 
 size :3321
 size :3321
-unit search: 3.1473 seconds
+unit search: 3.11399 seconds
 size :3321
-unit search: 4.09965 seconds
+unit search: 4.07335 seconds
 size :3321
-guess: 32.9187 seconds
+guess: 32.8185 seconds
 size :3321
-guess: 32.783 seconds
-size :3321
-size :3321
+guess: 32.6829 seconds
 size :3321
 size :3321
 size :3321
-mux: 4.25655 seconds
-check: 2.36076 seconds
-backtrack: 0.0148724 seconds
-propagation: 1.77654 seconds
-one step time: 45.2961 seconds
+size :3321
+size :3321
+mux: 4.2535 seconds
+check: 2.35739 seconds
+backtrack: 0.0149707 seconds
+propagation: 1.77021 seconds
+one step time: 45.1572 seconds
 model
 {915}
-mux: 4.11522 seconds
-check: 2.50023 seconds
-backtrack: 0.0149748 seconds
-propagation: 1.7768 seconds
-one step time: 44.4774 seconds
+mux: 4.10941 seconds
+check: 2.49979 seconds
+backtrack: 0.0151049 seconds
+propagation: 1.77061 seconds
+one step time: 44.3316 seconds
 model
 {915}
 Finished running on ./ssa-2/ssa2670-130.dimacs
@@ -268041,30 +268046,30 @@ size :3032
 -622 -661 -663 -664 -670 
 size :3032
 size :3032
-unit search: 2.88164 seconds
+unit search: 2.86984 seconds
 size :3032
-unit search: 3.81873 seconds
+unit search: 3.79537 seconds
 size :3032
-guess: 30.3079 seconds
+guess: 30.1068 seconds
 size :3032
-guess: 30.1813 seconds
-size :3032
-size :3032
+guess: 29.9837 seconds
 size :3032
 size :3032
 size :3032
-mux: 3.88441 seconds
-check: 2.16146 seconds
-backtrack: 0.0151069 seconds
-propagation: 1.62742 seconds
-one step time: 41.6932 seconds
+size :3032
+size :3032
+mux: 3.89042 seconds
+check: 2.16716 seconds
+backtrack: 0.0149823 seconds
+propagation: 1.63356 seconds
+one step time: 41.4899 seconds
 model
 {230}
-mux: 3.75526 seconds
-check: 2.28857 seconds
-backtrack: 0.0152279 seconds
-propagation: 1.62779 seconds
-one step time: 40.8809 seconds
+mux: 3.76282 seconds
+check: 2.2928 seconds
+backtrack: 0.0150781 seconds
+propagation: 1.63391 seconds
+one step time: 40.6857 seconds
 model
 {230}
 Finished running on ./ssa-2/ssa7552-159.dimacs
@@ -286834,30 +286839,30 @@ size :3126
 -486 -487 -490 -491 -492 
 size :3126
 size :3126
-unit search: 3.0753 seconds
+unit search: 3.02158 seconds
 size :3126
-unit search: 4.03079 seconds
+unit search: 3.98159 seconds
 size :3126
-guess: 31.6478 seconds
+guess: 31.7136 seconds
 size :3126
-guess: 31.5161 seconds
-size :3126
-size :3126
+guess: 31.5787 seconds
 size :3126
 size :3126
 size :3126
-mux: 4.06169 seconds
-check: 2.27152 seconds
-backtrack: 0.0153008 seconds
-propagation: 1.70911 seconds
-one step time: 43.609 seconds
+size :3126
+size :3126
+mux: 4.09329 seconds
+check: 2.27418 seconds
+backtrack: 0.015342 seconds
+propagation: 1.71412 seconds
+one step time: 43.6618 seconds
 model
 {-229}
-mux: 3.92828 seconds
-check: 2.40311 seconds
-backtrack: 0.0153655 seconds
-propagation: 1.70951 seconds
-one step time: 42.7834 seconds
+mux: 3.95846 seconds
+check: 2.40722 seconds
+backtrack: 0.0154114 seconds
+propagation: 1.71453 seconds
+one step time: 42.8349 seconds
 model
 {-229}
 Finished running on ./ssa-2/ssa7552-160.dimacs
@@ -300761,30 +300766,30 @@ size :2315
 127 129 132 262 264 
 size :2315
 size :2315
-unit search: 1.58672 seconds
+unit search: 1.58992 seconds
 size :2315
-unit search: 2.00099 seconds
+unit search: 1.99938 seconds
 size :2315
-guess: 16.6361 seconds
+guess: 16.6431 seconds
 size :2315
-guess: 16.5647 seconds
-size :2315
-size :2315
+guess: 16.5741 seconds
 size :2315
 size :2315
 size :2315
-mux: 2.15637 seconds
-check: 1.18527 seconds
-backtrack: 0.0117366 seconds
-propagation: 0.908065 seconds
-one step time: 22.831 seconds
+size :2315
+size :2315
+mux: 2.14994 seconds
+check: 1.19089 seconds
+backtrack: 0.0117575 seconds
+propagation: 0.917086 seconds
+one step time: 22.847 seconds
 model
 {79}
-mux: 2.08291 seconds
-check: 1.25685 seconds
-backtrack: 0.0118002 seconds
-propagation: 0.908284 seconds
-one step time: 22.4862 seconds
+mux: 2.07749 seconds
+check: 1.26145 seconds
+backtrack: 0.0118027 seconds
+propagation: 0.917338 seconds
+one step time: 22.5047 seconds
 model
 {79}
 Finished running on ./ssa-2/ssa2670-141.dimacs
@@ -322248,30 +322253,30 @@ size :3575
 -138 249 252 276 365 1494 
 size :3575
 size :3575
-unit search: 3.73187 seconds
+unit search: 3.73745 seconds
 size :3575
-unit search: 4.835 seconds
+unit search: 4.83349 seconds
 size :3575
-guess: 39.069 seconds
+guess: 39.2513 seconds
 size :3575
-guess: 38.9088 seconds
-size :3575
-size :3575
+guess: 39.0864 seconds
 size :3575
 size :3575
 size :3575
-mux: 5.03972 seconds
-check: 2.79135 seconds
-backtrack: 0.0161509 seconds
-propagation: 2.09989 seconds
-one step time: 53.6958 seconds
+size :3575
+size :3575
+mux: 5.10601 seconds
+check: 2.82429 seconds
+backtrack: 0.0163064 seconds
+propagation: 2.12591 seconds
+one step time: 53.9973 seconds
 model
 {1079}
-mux: 4.87537 seconds
-check: 2.9539 seconds
-backtrack: 0.0162452 seconds
-propagation: 2.10025 seconds
-one step time: 52.751 seconds
+mux: 4.93569 seconds
+check: 2.99282 seconds
+backtrack: 0.0163929 seconds
+propagation: 2.12629 seconds
+one step time: 53.0643 seconds
 model
 {1079}
 Finished running on ./ssa-2/ssa7552-038.dimacs
