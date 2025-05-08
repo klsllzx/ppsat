@@ -19,7 +19,7 @@ def process_all_dimacs_with_time(folder_path: str):
 
         print(f"Running ppsat.py on {dimacs_file.name} and {time_file.name}")
         result = subprocess.run([
-            "python3", "/root/ppsat/py_ppsat/ppsat.py",
+            "python3", "/home/ubuntu/ppsat/py_ppsat/ppsat.py",
             str(dimacs_file),
             str(time_file)
         ], capture_output=True, text=True)

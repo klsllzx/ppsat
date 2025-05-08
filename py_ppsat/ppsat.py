@@ -466,10 +466,10 @@ if __name__ == "__main__":
     else:
         raise Exception("Unknown heuristic type " + htype)
     print("5 days timeout with step length", int(432000/steps_length))
-    steps = solve(f, h, int(432/steps_length))
+    steps = solve(f, h, int(432000/steps_length))
     # print(nvar, ncls, steps)
     if steps == -1:
         print(f"out of time")
         # print(genotype, casenum, htype, -1)
     else:
-        print(f"Time cost on r5b4x {step*one_step_time}")
+        print(f"Time cost on r5b4x {steps*one_step_time}")

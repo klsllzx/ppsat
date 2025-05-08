@@ -1,0 +1,65 @@
+nohup: ignoring input
+Running ppsat.py on ssa0432-003.dimacs and ssa0432-003.dimacs_time
+STDOUT:
+ running file ssa-2/ssa0432-003.dimacs with one step time 4.41159
+5 days timeout with step length 97923
+out of time
+
+STDERR:
+ 
+------------------------------------------------------------
+Running ppsat.py on ssa2670-130.dimacs and ssa2670-130.dimacs_time
+STDOUT:
+ running file ssa-2/ssa2670-130.dimacs with one step time 44.3316
+5 days timeout with step length 9744
+out of time
+
+STDERR:
+ 
+------------------------------------------------------------
+Running ppsat.py on ssa2670-141.dimacs and ssa2670-141.dimacs_time
+STDOUT:
+ running file ssa-2/ssa2670-141.dimacs with one step time 22.5047
+5 days timeout with step length 19195
+out of time
+
+STDERR:
+ 
+------------------------------------------------------------
+[Warning] Time file not found for: ssa-2/ssa6288-047.dimacs
+Running ppsat.py on ssa7552-038.dimacs and ssa7552-038.dimacs_time
+STDOUT:
+ running file ssa-2/ssa7552-038.dimacs with one step time 53.0643
+5 days timeout with step length 8141
+Time cost on r5b4x 94029.93960000001
+
+STDERR:
+ 
+------------------------------------------------------------
+Running ppsat.py on ssa7552-158.dimacs and ssa7552-158.dimacs_time
+STDOUT:
+ running file ssa-2/ssa7552-158.dimacs with one step time 41.0043
+5 days timeout with step length 10535
+out of time
+
+STDERR:
+ 
+------------------------------------------------------------
+Running ppsat.py on ssa7552-159.dimacs and ssa7552-159.dimacs_time
+STDOUT:
+ running file ssa-2/ssa7552-159.dimacs with one step time 40.6857
+5 days timeout with step length 10617
+out of time
+
+STDERR:
+ 
+------------------------------------------------------------
+Running ppsat.py on ssa7552-160.dimacs and ssa7552-160.dimacs_time
+STDOUT:
+ running file ssa-2/ssa7552-160.dimacs with one step time 42.8349
+5 days timeout with step length 10085
+Time cost on r5b4x 77188.4898
+
+STDERR:
+ 
+------------------------------------------------------------
