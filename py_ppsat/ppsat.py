@@ -352,7 +352,7 @@ def solve(starting_formula:Formula, h, max_steps:int):
     current_formula = copy.deepcopy(starting_formula)
     conflict = False
     while True:
-        print(f"loop {i}")
+        # print(f"loop {i}")
         #logging.debug("=={}=================================".format(i))
         #logging.debug("loop head: {} {} {}".format(current_formula, current_literal, current_model))
         if i != 0:
@@ -428,6 +428,11 @@ def read_formula_from_file(filename:str):
             cls_list.append(cls)
         return nvar, ncls, Formula(cls_list)
 
+def read_time_from_file(filename:str):
+    with open(filename, "r") as infile:
+        first_line = infile.readline().split()
+        time = float(first_line[0])
+        return time
 
 if __name__ == "__main__":
     #logging.basicConfig(level=#logging.INFO)
@@ -441,6 +446,8 @@ if __name__ == "__main__":
     # print(nvar, ncls, nltr, steps)
 
     filename = sys.argv[1]
+    one_step_time = read_time_from_file(sys.argv[2])
+    print("running file", filename, "with one step time", one_step_time)
     # genotype = sys.argv[2]
     # casenum = sys.argv[3]
     # htype = sys.argv[4]
@@ -455,13 +462,14 @@ if __name__ == "__main__":
         steps_length = (nvar * ncls * 0.43)/100000
     elif htype == "det":
         h = DetHeuristic
-        steps_length = (nvar * ncls * 1.05)/100000
+        steps_length = one_step_time
     else:
         raise Exception("Unknown heuristic type " + htype)
-    steps = solve(f, h, int(100000/steps_length))
+    print("5 days timeout with step length", int(432000/steps_length))
+    steps = solve(f, h, int(432/steps_length))
     # print(nvar, ncls, steps)
     if steps == -1:
-        print(f"step {steps}")
+        print(f"out of time")
         # print(genotype, casenum, htype, -1)
     else:
-        print(f"steps {step}")
+        print(f"Time cost on r5b4x {step*one_step_time}")
