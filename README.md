@@ -6,6 +6,7 @@
 Install cmake:
 ```shell
 sudo apt install cmake
+sudo apt-get install libgmp-dev
 ```
 
 Install gtest:
@@ -28,6 +29,8 @@ python install.py --deps --tool --ot --sh2pc
 ```shell
 cmake .
 make
+FOR AMR64
+add_compile_options(-march=armv8-a+crypto)
 ```
 
 ## Run
